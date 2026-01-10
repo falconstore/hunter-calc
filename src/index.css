@@ -1,100 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Lato:wght@300;400;500;600;700;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* Premium Dark Theme - Orange & Black
+   All colors MUST be HSL.
 */
 
 @layer base {
-  /* Modo Escuro (padrão) */
+  /* Modo Escuro Premium (padrão) */
   :root {
-    --background: 220 25% 6%;
-    --foreground: 180 100% 95%;
+    --background: 0 0% 4%;
+    --foreground: 30 10% 92%;
 
-    --card: 220 20% 10%;
-    --card-foreground: 180 100% 95%;
+    --card: 0 0% 8%;
+    --card-foreground: 30 10% 92%;
 
-    --popover: 220 25% 8%;
-    --popover-foreground: 180 100% 95%;
+    --popover: 0 0% 6%;
+    --popover-foreground: 30 10% 92%;
 
-    --primary: 190 95% 55%;
-    --primary-foreground: 220 25% 6%;
+    --primary: 25 100% 50%;
+    --primary-foreground: 0 0% 4%;
     
-    --secondary: 160 85% 50%;
-    --secondary-foreground: 220 25% 6%;
+    --secondary: 35 100% 55%;
+    --secondary-foreground: 0 0% 4%;
 
-    --muted: 220 15% 15%;
-    --muted-foreground: 180 50% 70%;
+    --muted: 0 0% 12%;
+    --muted-foreground: 30 10% 60%;
 
-    --accent: 280 85% 65%;
-    --accent-foreground: 220 25% 6%;
+    --accent: 20 80% 45%;
+    --accent-foreground: 30 10% 92%;
 
-    --destructive: 0 85% 60%;
-    --destructive-foreground: 180 100% 95%;
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 30 10% 92%;
 
-    --border: 220 20% 18%;
-    --input: 220 20% 15%;
-    --ring: 190 95% 55%;
+    --border: 30 20% 18%;
+    --input: 0 0% 12%;
+    --ring: 25 100% 50%;
 
-    --radius: 0.75rem;
+    --radius: 0.5rem;
     
-    /* Custom Shark Theme */
-    --shark-gradient-start: 195 100% 50%;
-    --shark-gradient-mid: 175 85% 55%;
-    --shark-gradient-end: 160 90% 50%;
+    /* Premium Gradient Theme */
+    --premium-gradient-start: 25 100% 50%;
+    --premium-gradient-mid: 30 100% 55%;
+    --premium-gradient-end: 40 100% 50%;
     
-    --success: 160 85% 50%;
-    --success-foreground: 220 25% 6%;
+    --success: 145 70% 45%;
+    --success-foreground: 0 0% 4%;
     
-    --warning: 45 95% 60%;
-    --warning-foreground: 220 25% 6%;
+    --warning: 45 100% 55%;
+    --warning-foreground: 0 0% 4%;
     
-    --glow: 190 95% 55%;
+    --glow: 25 100% 50%;
+
+    /* Sidebar */
+    --sidebar-background: 0 0% 6%;
+    --sidebar-foreground: 30 10% 85%;
+    --sidebar-primary: 25 100% 50%;
+    --sidebar-primary-foreground: 0 0% 4%;
+    --sidebar-accent: 0 0% 12%;
+    --sidebar-accent-foreground: 30 10% 92%;
+    --sidebar-border: 30 15% 15%;
+    --sidebar-ring: 25 100% 50%;
   }
 
-  /* Modo Claro */
+  /* Modo Claro Premium */
   .light {
-    --background: 0 0% 98%;
-    --foreground: 220 25% 10%;
+    --background: 30 20% 97%;
+    --foreground: 0 0% 8%;
 
     --card: 0 0% 100%;
-    --card-foreground: 220 25% 10%;
+    --card-foreground: 0 0% 8%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 25% 10%;
+    --popover-foreground: 0 0% 8%;
 
-    --primary: 190 95% 40%;
+    --primary: 25 100% 45%;
     --primary-foreground: 0 0% 100%;
     
-    --secondary: 160 85% 35%;
+    --secondary: 35 90% 50%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 220 15% 92%;
-    --muted-foreground: 220 15% 40%;
+    --muted: 30 15% 92%;
+    --muted-foreground: 0 0% 40%;
 
-    --accent: 280 85% 55%;
+    --accent: 20 75% 40%;
     --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 85% 50%;
+    --destructive: 0 70% 45%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 15% 85%;
-    --input: 220 15% 90%;
-    --ring: 190 95% 40%;
+    --border: 30 15% 85%;
+    --input: 30 15% 92%;
+    --ring: 25 100% 45%;
     
-    /* Custom Shark Theme - Light */
-    --shark-gradient-start: 195 100% 40%;
-    --shark-gradient-mid: 175 85% 45%;
-    --shark-gradient-end: 160 90% 40%;
+    /* Premium Gradient Theme - Light */
+    --premium-gradient-start: 25 100% 45%;
+    --premium-gradient-mid: 30 100% 50%;
+    --premium-gradient-end: 40 100% 45%;
     
-    --success: 160 85% 35%;
+    --success: 145 65% 35%;
     --success-foreground: 0 0% 100%;
     
-    --warning: 45 95% 50%;
-    --warning-foreground: 220 25% 10%;
+    --warning: 45 100% 45%;
+    --warning-foreground: 0 0% 8%;
     
-    --glow: 190 95% 45%;
+    --glow: 25 100% 50%;
+
+    /* Sidebar Light */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 0 0% 25%;
+    --sidebar-primary: 25 100% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 30 15% 92%;
+    --sidebar-accent-foreground: 0 0% 8%;
+    --sidebar-border: 30 15% 88%;
+    --sidebar-ring: 25 100% 45%;
   }
 }
 
@@ -109,18 +131,35 @@ All colors MUST be HSL.
     font-optical-sizing: auto;
   }
   
-  /* Smooth scrolling */
   html {
     scroll-behavior: smooth;
+  }
+
+  /* Typography - Serif elegante para títulos */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 700;
+  }
+
+  body {
+    font-family: 'Lato', system-ui, sans-serif;
   }
 }
 
 @layer utilities {
+  .font-serif {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+
+  .font-sans {
+    font-family: 'Lato', system-ui, sans-serif;
+  }
+
   .gradient-primary {
     background: linear-gradient(135deg, 
-      hsl(var(--shark-gradient-start)), 
-      hsl(var(--shark-gradient-mid)), 
-      hsl(var(--shark-gradient-end))
+      hsl(var(--premium-gradient-start)), 
+      hsl(var(--premium-gradient-mid)), 
+      hsl(var(--premium-gradient-end))
     );
   }
   
@@ -129,19 +168,49 @@ All colors MUST be HSL.
       hsl(var(--primary)), 
       hsl(var(--secondary))
     );
-    box-shadow: 0 0 60px hsl(var(--glow) / 0.3);
+    box-shadow: 0 0 40px hsl(var(--glow) / 0.4);
   }
   
   .glass-card {
-    background: hsl(var(--card) / 0.6);
-    backdrop-filter: blur(12px);
-    border: 1px solid hsl(var(--border) / 0.5);
+    background: hsl(var(--card) / 0.85);
+    backdrop-filter: blur(16px);
+    border: 1px solid hsl(var(--primary) / 0.15);
     transition: all 0.3s ease;
   }
   
   .glass-card:hover {
-    border-color: hsl(var(--primary) / 0.6);
-    box-shadow: 0 0 30px hsl(var(--glow) / 0.4);
+    border-color: hsl(var(--primary) / 0.4);
+    box-shadow: 0 8px 32px hsl(var(--glow) / 0.25);
+  }
+
+  .premium-card {
+    background: hsl(var(--card));
+    border: 1px solid hsl(var(--primary) / 0.2);
+    border-radius: var(--radius);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .premium-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, hsl(var(--primary)), hsl(var(--secondary)));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .premium-card:hover::before {
+    opacity: 1;
+  }
+
+  .premium-card:hover {
+    border-color: hsl(var(--primary) / 0.5);
+    box-shadow: 0 12px 40px hsl(var(--glow) / 0.2);
     transform: translateY(-2px);
   }
   
@@ -149,6 +218,17 @@ All colors MUST be HSL.
     background: linear-gradient(135deg, 
       hsl(var(--primary)), 
       hsl(var(--secondary))
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-gradient-gold {
+    background: linear-gradient(135deg, 
+      hsl(25 100% 50%),
+      hsl(40 100% 55%),
+      hsl(35 100% 45%)
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -162,6 +242,55 @@ All colors MUST be HSL.
   .glow-hover:hover {
     box-shadow: 0 0 30px hsl(var(--glow) / 0.4);
     transform: translateY(-2px);
+  }
+
+  /* Premium Divider */
+  .premium-divider {
+    height: 1px;
+    background: linear-gradient(90deg, 
+      transparent 0%, 
+      hsl(var(--primary) / 0.5) 50%, 
+      transparent 100%
+    );
+    margin: 2rem 0;
+  }
+
+  /* Premium Button */
+  .btn-premium {
+    background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
+    color: hsl(var(--primary-foreground));
+    font-weight: 700;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--radius);
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .btn-premium:hover {
+    box-shadow: 0 8px 25px hsl(var(--glow) / 0.5);
+    transform: translateY(-2px);
+  }
+
+  .btn-premium-outline {
+    background: transparent;
+    border: 2px solid hsl(var(--primary));
+    color: hsl(var(--primary));
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--radius);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .btn-premium-outline:hover {
+    background: hsl(var(--primary));
+    color: hsl(var(--primary-foreground));
+    box-shadow: 0 8px 25px hsl(var(--glow) / 0.4);
   }
   
   /* Keyframes para highlight de lucro */
@@ -195,7 +324,6 @@ All colors MUST be HSL.
     }
   }
 
-  /* Keyframe para efeito ripple */
   @keyframes ripple {
     0% {
       transform: translate(-50%, -50%) scale(0);
@@ -231,7 +359,6 @@ All colors MUST be HSL.
     animation: profitPulseGreen 1s ease-out;
   }
 
-  /* Glow extra em resultados */
   .results-table .profit-positive {
     text-shadow: 0 0 10px hsl(var(--success) / 0.5);
   }
@@ -240,7 +367,7 @@ All colors MUST be HSL.
     text-shadow: 0 0 10px hsl(var(--destructive) / 0.5);
   }
   
-  /* Animações de entrada */
+  /* Animações */
   @keyframes togglePulse {
     0% { transform: scale(1); }
     50% { transform: scale(0.95); }
@@ -269,7 +396,7 @@ All colors MUST be HSL.
     }
   }
 
-  /* Botão toggle BACK/LAY para Cards - com ripple */
+  /* Toggle Buttons Premium */
   .btn-toggle-backlay {
     position: relative;
     overflow: hidden;
@@ -277,7 +404,7 @@ All colors MUST be HSL.
     font-size: 0.75rem;
     font-weight: 700;
     border: 2px solid hsl(var(--border));
-    border-radius: 0.5rem;
+    border-radius: var(--radius);
     background: transparent;
     color: hsl(var(--muted-foreground));
     cursor: pointer;
@@ -285,6 +412,7 @@ All colors MUST be HSL.
     min-width: 80px;
     text-transform: uppercase;
     letter-spacing: 0.05em;
+    font-family: 'Lato', sans-serif;
   }
 
   .btn-toggle-backlay::after {
@@ -305,12 +433,12 @@ All colors MUST be HSL.
   }
   
   .btn-toggle-backlay:hover {
-    border-color: hsl(var(--shark-gradient-start));
-    color: hsl(var(--shark-gradient-start));
+    border-color: hsl(var(--primary));
+    color: hsl(var(--primary));
   }
   
   .btn-toggle-backlay.active {
-    background: linear-gradient(135deg, hsl(var(--shark-gradient-start)), hsl(var(--shark-gradient-end)));
+    background: linear-gradient(135deg, hsl(var(--premium-gradient-start)), hsl(var(--premium-gradient-end)));
     border-color: transparent;
     color: hsl(var(--primary-foreground));
     font-weight: 800;
@@ -318,7 +446,6 @@ All colors MUST be HSL.
     animation: togglePulse 0.3s ease-out;
   }
   
-  /* Botão toggle BACK/LAY para Tabela - com ripple */
   .btn-toggle-mini {
     position: relative;
     overflow: hidden;
@@ -326,7 +453,7 @@ All colors MUST be HSL.
     font-size: 0.65rem;
     font-weight: 700;
     border: 2px solid hsl(var(--border));
-    border-radius: 0.375rem;
+    border-radius: calc(var(--radius) - 2px);
     background: transparent;
     color: hsl(var(--muted-foreground));
     cursor: pointer;
@@ -334,6 +461,7 @@ All colors MUST be HSL.
     min-width: 50px;
     text-transform: uppercase;
     letter-spacing: 0.05em;
+    font-family: 'Lato', sans-serif;
   }
 
   .btn-toggle-mini::after {
@@ -354,12 +482,12 @@ All colors MUST be HSL.
   }
   
   .btn-toggle-mini:hover {
-    border-color: hsl(var(--shark-gradient-start));
-    color: hsl(var(--shark-gradient-start));
+    border-color: hsl(var(--primary));
+    color: hsl(var(--primary));
   }
   
   .btn-toggle-mini.active {
-    background: linear-gradient(135deg, hsl(var(--shark-gradient-start)), hsl(var(--shark-gradient-end)));
+    background: linear-gradient(135deg, hsl(var(--premium-gradient-start)), hsl(var(--premium-gradient-end)));
     border-color: transparent;
     color: hsl(var(--primary-foreground));
     font-weight: 800;
@@ -367,46 +495,43 @@ All colors MUST be HSL.
     animation: togglePulse 0.3s ease-out;
   }
 
-  /* Form Select - padronizado com ArbiPro */
+  /* Form Elements Premium */
   .form-select {
     width: 100%;
-    background: hsl(var(--background));
+    background: hsl(var(--input));
     color: hsl(var(--foreground));
-    border: 2px solid hsl(var(--border));
-    border-radius: 0.5rem;
+    border: 1px solid hsl(var(--border));
+    border-radius: var(--radius);
     padding: 0.75rem 1rem;
     font-size: 0.875rem;
     font-weight: 500;
     transition: all 0.2s ease;
     outline: none;
     cursor: pointer;
+    font-family: 'Lato', sans-serif;
   }
 
   .form-select:focus {
     border-color: hsl(var(--primary));
-    box-shadow: 0 0 0 4px hsl(var(--primary) / 0.1);
+    box-shadow: 0 0 0 3px hsl(var(--primary) / 0.15);
   }
 
-  /* Cards genéricos */
   .card {
-    background: hsl(var(--card) / 0.6);
-    backdrop-filter: blur(12px);
-    border: 1px solid hsl(var(--border) / 0.5);
-    border-radius: 0.75rem;
+    background: hsl(var(--card));
+    border: 1px solid hsl(var(--border));
+    border-radius: var(--radius);
     padding: 2rem;
     transition: all 0.3s ease;
   }
 
   .card:hover {
-    border-color: hsl(var(--primary) / 0.5);
+    border-color: hsl(var(--primary) / 0.3);
   }
 
-  /* House Card com borda superior gradiente */
   .house-card {
-    background: hsl(var(--card) / 0.6);
-    backdrop-filter: blur(12px);
-    border: 1px solid hsl(var(--border) / 0.5);
-    border-radius: 0.75rem;
+    background: hsl(var(--card));
+    border: 1px solid hsl(var(--border));
+    border-radius: var(--radius);
     padding: 1.5rem;
     transition: all 0.3s ease;
     position: relative;
@@ -420,8 +545,8 @@ All colors MUST be HSL.
     top: 0;
     left: 0;
     right: 0;
-    height: 3px;
-    background: linear-gradient(90deg, hsl(var(--shark-gradient-start)), hsl(var(--shark-gradient-end)));
+    height: 2px;
+    background: linear-gradient(90deg, hsl(var(--primary)), hsl(var(--secondary)));
     opacity: 0;
     transition: opacity 0.3s ease;
   }
@@ -431,8 +556,8 @@ All colors MUST be HSL.
   }
 
   .house-card:hover {
-    border-color: hsl(var(--primary) / 0.8);
-    box-shadow: 0 0 30px hsl(var(--glow) / 0.4);
+    border-color: hsl(var(--primary) / 0.5);
+    box-shadow: 0 8px 30px hsl(var(--glow) / 0.2);
     transform: translateY(-2px);
   }
 
@@ -443,12 +568,7 @@ All colors MUST be HSL.
   .house-card:nth-child(4) { animation-delay: 150ms; }
   .house-card:nth-child(5) { animation-delay: 200ms; }
   .house-card:nth-child(6) { animation-delay: 250ms; }
-  .house-card:nth-child(7) { animation-delay: 300ms; }
-  .house-card:nth-child(8) { animation-delay: 350ms; }
-  .house-card:nth-child(9) { animation-delay: 400ms; }
-  .house-card:nth-child(10) { animation-delay: 450ms; }
 
-  /* Grid layout para cards */
   .house-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -457,14 +577,12 @@ All colors MUST be HSL.
     animation: fadeInUp 0.3s ease-out;
   }
 
-  /* Grid 2 colunas */
   .grid-2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
 
-  /* Form groups */
   .form-group {
     margin-bottom: 1rem;
   }
@@ -477,42 +595,44 @@ All colors MUST be HSL.
     letter-spacing: 0.05em;
     color: hsl(var(--muted-foreground));
     margin-bottom: 0.5rem;
+    font-family: 'Lato', sans-serif;
   }
 
   .form-input {
     width: 100%;
-    background: hsl(var(--background));
+    background: hsl(var(--input));
     color: hsl(var(--foreground));
-    border: 2px solid hsl(var(--border));
-    border-radius: 0.5rem;
+    border: 1px solid hsl(var(--border));
+    border-radius: var(--radius);
     padding: 0.75rem 1rem;
     font-size: 0.875rem;
     font-weight: 500;
     transition: all 0.2s ease;
     outline: none;
+    font-family: 'Lato', sans-serif;
   }
 
   .form-input:focus {
     border-color: hsl(var(--primary));
-    box-shadow: 0 0 0 4px hsl(var(--primary) / 0.1);
+    box-shadow: 0 0 0 3px hsl(var(--primary) / 0.15);
   }
 
   .form-input::placeholder {
     color: hsl(var(--muted-foreground));
   }
 
-  /* Tabela padrão */
+  /* Table Premium */
   .house-table {
     width: 100%;
     border-collapse: separate;
     border-spacing: 0;
-    border-radius: 0.75rem;
+    border-radius: var(--radius);
     overflow: hidden;
-    border: 1px solid hsl(var(--border) / 0.5);
+    border: 1px solid hsl(var(--border));
   }
 
   .house-table thead {
-    background: linear-gradient(135deg, hsl(var(--shark-gradient-start)), hsl(var(--shark-gradient-end)));
+    background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
   }
 
   .house-table th {
@@ -524,11 +644,12 @@ All colors MUST be HSL.
     letter-spacing: 0.05em;
     color: hsl(var(--primary-foreground));
     white-space: nowrap;
+    font-family: 'Lato', sans-serif;
   }
 
   .house-table td {
     padding: 0.5rem;
-    border-bottom: 1px solid hsl(var(--border) / 0.3);
+    border-bottom: 1px solid hsl(var(--border) / 0.5);
     font-size: 0.83rem;
     color: hsl(var(--foreground));
     vertical-align: middle;
@@ -536,39 +657,32 @@ All colors MUST be HSL.
   }
 
   .house-row {
-    background: hsl(var(--card) / 0.6);
+    background: hsl(var(--card));
     transition: background 0.2s ease;
     animation: slideInLeft 0.2s ease-out both;
   }
 
   .house-row:hover {
-    background: hsl(var(--card) / 0.9);
+    background: hsl(var(--muted));
   }
 
-  /* Animação escalonada para linhas da tabela */
   .house-row:nth-child(1) { animation-delay: 0ms; }
   .house-row:nth-child(2) { animation-delay: 40ms; }
   .house-row:nth-child(3) { animation-delay: 80ms; }
   .house-row:nth-child(4) { animation-delay: 120ms; }
   .house-row:nth-child(5) { animation-delay: 160ms; }
   .house-row:nth-child(6) { animation-delay: 200ms; }
-  .house-row:nth-child(7) { animation-delay: 240ms; }
-  .house-row:nth-child(8) { animation-delay: 280ms; }
-  .house-row:nth-child(9) { animation-delay: 320ms; }
-  .house-row:nth-child(10) { animation-delay: 360ms; }
 
-  /* Container da tabela com animação */
   .house-table-container {
     animation: slideInLeft 0.3s ease-out;
   }
 
-  /* Inputs da tabela */
   .table-input {
     width: 62px;
-    background: hsl(var(--background));
+    background: hsl(var(--input));
     color: hsl(var(--foreground));
     border: 1px solid hsl(var(--border));
-    border-radius: 0.375rem;
+    border-radius: calc(var(--radius) - 2px);
     padding: 0.375rem 0.5rem;
     font-size: 0.76rem;
     font-weight: 500;
@@ -585,10 +699,10 @@ All colors MUST be HSL.
 
   .table-input-mini {
     width: 50px;
-    background: hsl(var(--background));
+    background: hsl(var(--input));
     color: hsl(var(--foreground));
     border: 1px solid hsl(var(--border));
-    border-radius: 0.375rem;
+    border-radius: calc(var(--radius) - 2px);
     padding: 0.25rem 0.375rem;
     font-size: 0.665rem;
     font-family: ui-monospace, monospace;
@@ -602,7 +716,6 @@ All colors MUST be HSL.
     box-shadow: 0 0 0 2px hsl(var(--primary) / 0.2);
   }
 
-  /* Wrapper de stake com R$ */
   .table-stake-wrapper {
     display: flex;
     align-items: center;
@@ -620,11 +733,7 @@ All colors MUST be HSL.
     width: 68px;
   }
 
-  /* ============================================
-     THEME TOGGLE ANIMATIONS
-     ============================================ */
-  
-  /* Animação do Toggle de Tema */
+  /* Theme Toggle */
   .theme-toggle-btn {
     position: relative;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -639,47 +748,41 @@ All colors MUST be HSL.
     transform: scale(0.95);
   }
 
-  /* Transição suave entre temas */
   html {
     transition: background-color 0.4s ease, color 0.4s ease;
   }
 
-  /* Glass card no modo claro */
+  /* Light mode adjustments */
   .light .glass-card {
-    background: hsl(var(--card) / 0.85);
-    box-shadow: 0 4px 20px hsl(var(--foreground) / 0.08);
+    background: hsl(var(--card) / 0.9);
+    box-shadow: 0 4px 20px hsl(var(--foreground) / 0.06);
   }
 
   .light .glass-card:hover {
-    box-shadow: 0 8px 30px hsl(var(--primary) / 0.15);
+    box-shadow: 0 8px 30px hsl(var(--primary) / 0.12);
   }
 
-  /* Text gradient no modo claro */
-  .light .text-gradient {
-    background: linear-gradient(135deg, 
-      hsl(var(--primary)), 
-      hsl(var(--secondary))
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+  .light .premium-card {
+    box-shadow: 0 2px 12px hsl(var(--foreground) / 0.04);
   }
 
-  /* Ajustes para cards no modo claro */
+  .light .premium-card:hover {
+    box-shadow: 0 12px 40px hsl(var(--primary) / 0.15);
+  }
+
   .light .card {
-    box-shadow: 0 2px 15px hsl(var(--foreground) / 0.06);
+    box-shadow: 0 2px 15px hsl(var(--foreground) / 0.04);
   }
 
   .light .house-card {
     background: hsl(var(--card));
-    box-shadow: 0 2px 12px hsl(var(--foreground) / 0.06);
+    box-shadow: 0 2px 12px hsl(var(--foreground) / 0.04);
   }
 
   .light .house-card:hover {
-    box-shadow: 0 8px 25px hsl(var(--primary) / 0.12);
+    box-shadow: 0 8px 25px hsl(var(--primary) / 0.1);
   }
 
-  /* Inputs brancos no modo claro */
   .light .form-input,
   .light .form-select,
   .light input[type="text"],
@@ -696,21 +799,12 @@ All colors MUST be HSL.
   .light input[type="number"]:focus,
   .light select:focus {
     border-color: hsl(var(--primary)) !important;
-    box-shadow: 0 0 0 4px hsl(var(--primary) / 0.15) !important;
+    box-shadow: 0 0 0 3px hsl(var(--primary) / 0.12) !important;
   }
 
   .light .table-input,
   .light .table-input-mini {
     background: hsl(0 0% 100%) !important;
     color: hsl(var(--foreground)) !important;
-  }
-
-  .light .stat-card {
-    background: hsl(var(--card) / 0.95);
-    box-shadow: 0 2px 12px hsl(var(--foreground) / 0.05);
-  }
-
-  .light .results-table tbody tr {
-    background: hsl(var(--card) / 0.9);
   }
 }
