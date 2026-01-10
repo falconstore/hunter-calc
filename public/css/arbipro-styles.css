@@ -571,7 +571,7 @@
 }
 
 .btn-view.active {
-  background: linear-gradient(135deg, hsl(var(--shark-gradient-start)), hsl(var(--shark-gradient-end)));
+  background: linear-gradient(135deg, hsl(var(--premium-gradient-start)), hsl(var(--premium-gradient-end)));
   border-color: transparent;
   color: hsl(var(--primary-foreground));
 }
@@ -595,7 +595,7 @@
 }
 
 .house-table thead {
-  background: linear-gradient(135deg, hsl(var(--shark-gradient-start)), hsl(var(--shark-gradient-end)));
+  background: linear-gradient(135deg, hsl(var(--premium-gradient-start)), hsl(var(--premium-gradient-end)));
 }
 
 .house-table th {

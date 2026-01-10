@@ -187,7 +187,7 @@ export const About = () => {
                 className="text-center"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="w-16 h-16 rounded-full bg-gradient-to-r from-[hsl(var(--shark-gradient-start))] to-[hsl(var(--shark-gradient-end))] text-white text-2xl font-black flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 rounded-full bg-gradient-to-r from-[hsl(var(--premium-gradient-start))] to-[hsl(var(--premium-gradient-end))] text-white text-2xl font-black flex items-center justify-center mx-auto mb-4">
                   {req.number}
                 </div>
                 <h4 className="text-xl font-bold mb-2">{req.title}</h4>

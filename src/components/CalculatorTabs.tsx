@@ -54,21 +54,21 @@ export const CalculatorTabs = () => {
           <TabsList className="grid w-full max-w-xl mx-auto grid-cols-3 mb-8 h-14 p-1 bg-background/50 backdrop-blur-sm border border-border/50">
             <TabsTrigger 
               value="arbipro" 
-              className="text-base font-bold data-[state=active]:bg-gradient-to-r data-[state=active]:from-[hsl(var(--shark-gradient-start))] data-[state=active]:to-[hsl(var(--shark-gradient-end))] data-[state=active]:text-white transition-all duration-300"
+              className="text-base font-bold data-[state=active]:bg-gradient-to-r data-[state=active]:from-[hsl(var(--premium-gradient-start))] data-[state=active]:to-[hsl(var(--premium-gradient-end))] data-[state=active]:text-white transition-all duration-300"
             >
               <Calculator className="w-5 h-5 mr-2" />
               ArbiPro
             </TabsTrigger>
             <TabsTrigger 
               value="freepro" 
-              className="text-base font-bold data-[state=active]:bg-gradient-to-r data-[state=active]:from-[hsl(var(--shark-gradient-start))] data-[state=active]:to-[hsl(var(--shark-gradient-end))] data-[state=active]:text-white transition-all duration-300"
+              className="text-base font-bold data-[state=active]:bg-gradient-to-r data-[state=active]:from-[hsl(var(--premium-gradient-start))] data-[state=active]:to-[hsl(var(--premium-gradient-end))] data-[state=active]:text-white transition-all duration-300"
             >
               <TrendingUp className="w-5 h-5 mr-2" />
               FreePro
             </TabsTrigger>
             <TabsTrigger 
               value="multilay" 
-              className="text-base font-bold data-[state=active]:bg-gradient-to-r data-[state=active]:from-[hsl(var(--shark-gradient-start))] data-[state=active]:to-[hsl(var(--shark-gradient-end))] data-[state=active]:text-white transition-all duration-300"
+              className="text-base font-bold data-[state=active]:bg-gradient-to-r data-[state=active]:from-[hsl(var(--premium-gradient-start))] data-[state=active]:to-[hsl(var(--premium-gradient-end))] data-[state=active]:text-white transition-all duration-300"
             >
               <Layers className="w-5 h-5 mr-2" />
               MultiLay
