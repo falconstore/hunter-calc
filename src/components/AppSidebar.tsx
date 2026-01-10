@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink, useLocation, Link } from "react-router-dom";
 import {
   Calculator,
   TrendingUp,
@@ -14,6 +14,7 @@ import {
   ChevronLeft,
   ChevronRight,
   LayoutDashboard,
+  Home,
 } from "lucide-react";
 import { ThemeToggle } from "./ThemeToggle";
 import { cn } from "@/lib/utils";
@@ -23,6 +24,7 @@ interface SidebarItem {
   title: string;
   icon: React.ElementType;
   section?: string;
+  path?: string;
 }
 
 const calculatorItems: SidebarItem[] = [
@@ -32,11 +34,11 @@ const calculatorItems: SidebarItem[] = [
 ];
 
 const toolItems: SidebarItem[] = [
-  { id: "handicap-asiatico", title: "HA Asiático", icon: Target, section: "handicap-casas" },
-  { id: "handicap-europeu", title: "HA Europeu", icon: Globe, section: "handicap-casas" },
-  { id: "protection", title: "Proteção", icon: ShieldCheck, section: "handicap-casas" },
-  { id: "casas", title: "Casas Reg.", icon: Shield, section: "handicap-casas" },
-  { id: "info-casas", title: "Info Casas", icon: Database, section: "handicap-casas" },
+  { id: "handicap-asiatico", title: "HA Asiático", icon: Target, path: "/ferramentas/handicap-asiatico" },
+  { id: "handicap-europeu", title: "HA Europeu", icon: Globe, path: "/ferramentas/handicap-europeu" },
+  { id: "protection", title: "Proteção", icon: ShieldCheck, path: "/ferramentas/protecao" },
+  { id: "casas", title: "Casas Reg.", icon: Shield, path: "/ferramentas/casas-regulamentadas" },
+  { id: "info-casas", title: "Info Casas", icon: Database, path: "/ferramentas/info-casas" },
 ];
 
 const generalItems: SidebarItem[] = [
@@ -45,21 +47,19 @@ const generalItems: SidebarItem[] = [
 ];
 
 interface AppSidebarProps {
-  activeCalculator: string;
-  setActiveCalculator: (id: string) => void;
-  activeTool: string;
-  setActiveTool: (id: string) => void;
+  activeCalculator?: string;
+  setActiveCalculator?: (id: string) => void;
 }
 
 export const AppSidebar = ({
   activeCalculator,
   setActiveCalculator,
-  activeTool,
-  setActiveTool,
-}: AppSidebarProps) => {
+}: AppSidebarProps = {}) => {
   const [isCollapsed, setIsCollapsed] = useState(false);
+  const location = useLocation();
+  const isOnMainPage = location.pathname === "/";
 
-  const scrollToSection = (id: string, itemId?: string) => {
+  const scrollToSection = (id: string) => {
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
@@ -67,21 +67,18 @@ export const AppSidebar = ({
   };
 
   const handleCalculatorClick = (item: SidebarItem) => {
-    setActiveCalculator(item.id);
-    if (item.section) {
-      scrollToSection(item.section);
+    if (setActiveCalculator) {
+      setActiveCalculator(item.id);
     }
-  };
-
-  const handleToolClick = (item: SidebarItem) => {
-    setActiveTool(item.id);
-    if (item.section) {
+    if (item.section && isOnMainPage) {
       scrollToSection(item.section);
     }
   };
 
   const handleGeneralClick = (item: SidebarItem) => {
-    scrollToSection(item.id);
+    if (isOnMainPage) {
+      scrollToSection(item.id);
+    }
   };
 
   return (
@@ -94,12 +91,12 @@ export const AppSidebar = ({
       {/* Logo */}
       <div className="h-16 flex items-center justify-between px-4 border-b border-sidebar-border">
         {!isCollapsed && (
-          <div className="flex items-center gap-2">
+          <Link to="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
             <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
               <LayoutDashboard className="w-5 h-5 text-primary-foreground" />
             </div>
             <span className="font-serif font-bold text-lg text-gradient">Dashboard</span>
-          </div>
+          </Link>
         )}
         <button
           onClick={() => setIsCollapsed(!isCollapsed)}
@@ -111,6 +108,22 @@ export const AppSidebar = ({
 
       {/* Navigation */}
       <nav className="flex-1 overflow-y-auto py-4 px-2">
+        {/* Home Link (when not on main page) */}
+        {!isOnMainPage && (
+          <div className="mb-6">
+            <Link
+              to="/"
+              className={cn(
+                "w-full flex items-center gap-3 px-3 py-2.5 rounded-lg transition-all duration-200",
+                "text-sidebar-foreground hover:bg-sidebar-accent hover:text-sidebar-accent-foreground"
+              )}
+            >
+              <Home className={cn("w-5 h-5 flex-shrink-0", isCollapsed && "mx-auto")} />
+              {!isCollapsed && <span className="font-medium">Início</span>}
+            </Link>
+          </div>
+        )}
+
         {/* Calculadoras */}
         <div className="mb-6">
           {!isCollapsed && (
@@ -120,19 +133,33 @@ export const AppSidebar = ({
           )}
           <div className="space-y-1">
             {calculatorItems.map((item) => (
-              <button
-                key={item.id}
-                onClick={() => handleCalculatorClick(item)}
-                className={cn(
-                  "w-full flex items-center gap-3 px-3 py-2.5 rounded-lg transition-all duration-200",
-                  activeCalculator === item.id
-                    ? "bg-gradient-to-r from-primary to-secondary text-primary-foreground shadow-lg"
-                    : "text-sidebar-foreground hover:bg-sidebar-accent hover:text-sidebar-accent-foreground"
-                )}
-              >
-                <item.icon className={cn("w-5 h-5 flex-shrink-0", isCollapsed && "mx-auto")} />
-                {!isCollapsed && <span className="font-medium">{item.title}</span>}
-              </button>
+              isOnMainPage ? (
+                <button
+                  key={item.id}
+                  onClick={() => handleCalculatorClick(item)}
+                  className={cn(
+                    "w-full flex items-center gap-3 px-3 py-2.5 rounded-lg transition-all duration-200",
+                    activeCalculator === item.id
+                      ? "bg-gradient-to-r from-primary to-secondary text-primary-foreground shadow-lg"
+                      : "text-sidebar-foreground hover:bg-sidebar-accent hover:text-sidebar-accent-foreground"
+                  )}
+                >
+                  <item.icon className={cn("w-5 h-5 flex-shrink-0", isCollapsed && "mx-auto")} />
+                  {!isCollapsed && <span className="font-medium">{item.title}</span>}
+                </button>
+              ) : (
+                <Link
+                  key={item.id}
+                  to="/"
+                  className={cn(
+                    "w-full flex items-center gap-3 px-3 py-2.5 rounded-lg transition-all duration-200",
+                    "text-sidebar-foreground hover:bg-sidebar-accent hover:text-sidebar-accent-foreground"
+                  )}
+                >
+                  <item.icon className={cn("w-5 h-5 flex-shrink-0", isCollapsed && "mx-auto")} />
+                  {!isCollapsed && <span className="font-medium">{item.title}</span>}
+                </Link>
+              )
             ))}
           </div>
         </div>
@@ -146,19 +173,21 @@ export const AppSidebar = ({
           )}
           <div className="space-y-1">
             {toolItems.map((item) => (
-              <button
+              <NavLink
                 key={item.id}
-                onClick={() => handleToolClick(item)}
-                className={cn(
-                  "w-full flex items-center gap-3 px-3 py-2.5 rounded-lg transition-all duration-200",
-                  activeTool === item.id
-                    ? "bg-gradient-to-r from-primary to-secondary text-primary-foreground shadow-lg"
-                    : "text-sidebar-foreground hover:bg-sidebar-accent hover:text-sidebar-accent-foreground"
-                )}
+                to={item.path!}
+                className={({ isActive }) =>
+                  cn(
+                    "w-full flex items-center gap-3 px-3 py-2.5 rounded-lg transition-all duration-200",
+                    isActive
+                      ? "bg-gradient-to-r from-primary to-secondary text-primary-foreground shadow-lg"
+                      : "text-sidebar-foreground hover:bg-sidebar-accent hover:text-sidebar-accent-foreground"
+                  )
+                }
               >
                 <item.icon className={cn("w-5 h-5 flex-shrink-0", isCollapsed && "mx-auto")} />
                 {!isCollapsed && <span className="font-medium">{item.title}</span>}
-              </button>
+              </NavLink>
             ))}
           </div>
         </div>
@@ -172,17 +201,31 @@ export const AppSidebar = ({
           )}
           <div className="space-y-1">
             {generalItems.map((item) => (
-              <button
-                key={item.id}
-                onClick={() => handleGeneralClick(item)}
-                className={cn(
-                  "w-full flex items-center gap-3 px-3 py-2.5 rounded-lg transition-all duration-200",
-                  "text-sidebar-foreground hover:bg-sidebar-accent hover:text-sidebar-accent-foreground"
-                )}
-              >
-                <item.icon className={cn("w-5 h-5 flex-shrink-0", isCollapsed && "mx-auto")} />
-                {!isCollapsed && <span className="font-medium">{item.title}</span>}
-              </button>
+              isOnMainPage ? (
+                <button
+                  key={item.id}
+                  onClick={() => handleGeneralClick(item)}
+                  className={cn(
+                    "w-full flex items-center gap-3 px-3 py-2.5 rounded-lg transition-all duration-200",
+                    "text-sidebar-foreground hover:bg-sidebar-accent hover:text-sidebar-accent-foreground"
+                  )}
+                >
+                  <item.icon className={cn("w-5 h-5 flex-shrink-0", isCollapsed && "mx-auto")} />
+                  {!isCollapsed && <span className="font-medium">{item.title}</span>}
+                </button>
+              ) : (
+                <Link
+                  key={item.id}
+                  to="/"
+                  className={cn(
+                    "w-full flex items-center gap-3 px-3 py-2.5 rounded-lg transition-all duration-200",
+                    "text-sidebar-foreground hover:bg-sidebar-accent hover:text-sidebar-accent-foreground"
+                  )}
+                >
+                  <item.icon className={cn("w-5 h-5 flex-shrink-0", isCollapsed && "mx-auto")} />
+                  {!isCollapsed && <span className="font-medium">{item.title}</span>}
+                </Link>
+              )
             ))}
           </div>
         </div>
