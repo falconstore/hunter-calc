@@ -7,9 +7,6 @@ import { Skeleton } from "@/components/ui/skeleton";
 const CalculatorSection = lazy(() => import("./CalculatorSection").then(m => ({
   default: m.CalculatorSection
 })));
-const ToolsSection = lazy(() => import("./ToolsSection").then(m => ({
-  default: m.ToolsSection
-})));
 const About = lazy(() => import("./About").then(m => ({
   default: m.About
 })));
@@ -28,7 +25,6 @@ const LoadingSection = () => (
 
 export const DashboardLayout = () => {
   const [activeCalculator, setActiveCalculator] = useState("arbipro");
-  const [activeTool, setActiveTool] = useState("handicap-asiatico");
 
   return (
     <div className="min-h-screen bg-background">
@@ -37,8 +33,6 @@ export const DashboardLayout = () => {
         <AppSidebar
           activeCalculator={activeCalculator}
           setActiveCalculator={setActiveCalculator}
-          activeTool={activeTool}
-          setActiveTool={setActiveTool}
         />
       </div>
 
@@ -55,14 +49,6 @@ export const DashboardLayout = () => {
           <CalculatorSection 
             activeCalculator={activeCalculator} 
             setActiveCalculator={setActiveCalculator} 
-          />
-        </Suspense>
-
-        {/* Ferramentas */}
-        <Suspense fallback={<LoadingSection />}>
-          <ToolsSection 
-            activeTool={activeTool} 
-            setActiveTool={setActiveTool} 
           />
         </Suspense>
 
