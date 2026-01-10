@@ -765,10 +765,10 @@ export const CalculatorFreeProDirect = () => {
         <div className="stat-card">
           <div className="stat-label">Modo de Cálculo</div>
           <div className="flex gap-2 mt-3">
-            <button onClick={() => setMode("freebet")} className={`flex-1 px-4 py-2 rounded-lg font-bold text-sm transition-all ${mode === "freebet" ? "bg-gradient-to-r from-[hsl(var(--shark-gradient-start))] to-[hsl(var(--shark-gradient-end))] text-white" : "bg-muted text-muted-foreground hover:bg-muted/80"}`}>
+            <button onClick={() => setMode("freebet")} className={`flex-1 px-4 py-2 rounded-lg font-bold text-sm transition-all ${mode === "freebet" ? "bg-gradient-to-r from-[hsl(var(--premium-gradient-start))] to-[hsl(var(--premium-gradient-end))] text-white" : "bg-muted text-muted-foreground hover:bg-muted/80"}`}>
               Freebet
             </button>
-            <button onClick={() => setMode("cashback")} className={`flex-1 px-4 py-2 rounded-lg font-bold text-sm transition-all ${mode === "cashback" ? "bg-gradient-to-r from-[hsl(var(--shark-gradient-start))] to-[hsl(var(--shark-gradient-end))] text-white" : "bg-muted text-muted-foreground hover:bg-muted/80"}`}>
+            <button onClick={() => setMode("cashback")} className={`flex-1 px-4 py-2 rounded-lg font-bold text-sm transition-all ${mode === "cashback" ? "bg-gradient-to-r from-[hsl(var(--premium-gradient-start))] to-[hsl(var(--premium-gradient-end))] text-white" : "bg-muted text-muted-foreground hover:bg-muted/80"}`}>
               Cashback
             </button>
           </div>
@@ -822,7 +822,7 @@ export const CalculatorFreeProDirect = () => {
         if (e.key === "Enter") {
           setEditingName(null);
         }
-      }} autoFocus className="section-title bg-transparent border-b-2 border-[hsl(var(--shark-gradient-start))] outline-none w-full mb-4" /> : <div className="section-title cursor-pointer hover:opacity-80 transition-opacity mb-4" onClick={() => setEditingName(0)} title="Clique para editar o nome">
+      }} autoFocus className="section-title bg-transparent border-b-2 border-[hsl(var(--premium-gradient-start))] outline-none w-full mb-4" /> : <div className="section-title cursor-pointer hover:opacity-80 transition-opacity mb-4" onClick={() => setEditingName(0)} title="Clique para editar o nome">
               {houseNames[0]} (Freebet)
             </div>}
 
@@ -864,7 +864,7 @@ export const CalculatorFreeProDirect = () => {
         if (e.key === "Enter") {
           setEditingName(null);
         }
-      }} autoFocus className="section-title bg-transparent border-b-2 border-[hsl(var(--shark-gradient-start))] outline-none w-full mb-4" /> : <div className="section-title cursor-pointer hover:opacity-80 transition-opacity mb-4" onClick={() => setEditingName(0)} title="Clique para editar o nome">
+      }} autoFocus className="section-title bg-transparent border-b-2 border-[hsl(var(--premium-gradient-start))] outline-none w-full mb-4" /> : <div className="section-title cursor-pointer hover:opacity-80 transition-opacity mb-4" onClick={() => setEditingName(0)} title="Clique para editar o nome">
               {houseNames[0]} (Cashback)
             </div>}
 
@@ -918,7 +918,7 @@ export const CalculatorFreeProDirect = () => {
             if (e.key === "Enter") {
               setEditingName(null);
             }
-          }} autoFocus className="house-title bg-transparent border-b-2 border-[hsl(var(--shark-gradient-start))] outline-none w-full mb-4" /> : <h3 className="house-title cursor-pointer hover:opacity-80 transition-opacity" onClick={() => setEditingName(idx + 1)} title="Clique para editar o nome">
+          }} autoFocus className="house-title bg-transparent border-b-2 border-[hsl(var(--premium-gradient-start))] outline-none w-full mb-4" /> : <h3 className="house-title cursor-pointer hover:opacity-80 transition-opacity" onClick={() => setEditingName(idx + 1)} title="Clique para editar o nome">
                     {houseNames[idx + 1]}
                   </h3>}
 

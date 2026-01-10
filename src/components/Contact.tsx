@@ -36,7 +36,7 @@ export const Contact = () => {
             {/* Telegram Group */}
             <Card className="glass-card p-6 glow-hover">
               <div className="flex flex-col items-center text-center">
-                <div className="w-16 h-16 rounded-full bg-gradient-to-r from-[hsl(var(--shark-gradient-start))] to-[hsl(var(--shark-gradient-end))] flex items-center justify-center mb-4">
+                <div className="w-16 h-16 rounded-full bg-gradient-to-r from-[hsl(var(--premium-gradient-start))] to-[hsl(var(--premium-gradient-end))] flex items-center justify-center mb-4">
                   <MessageSquare className="w-8 h-8 text-white" />
                 </div>
                 <h4 className="text-xl font-bold mb-2">Grupo Telegram FREE</h4>
@@ -58,7 +58,7 @@ export const Contact = () => {
                   </div>
                 </div>
                 <Button
-                  className="w-full bg-gradient-to-r from-[hsl(var(--shark-gradient-start))] to-[hsl(var(--shark-gradient-end))] hover:opacity-90"
+                  className="w-full bg-gradient-to-r from-[hsl(var(--premium-gradient-start))] to-[hsl(var(--premium-gradient-end))] hover:opacity-90"
                   asChild
                 >
                   <a href="https://t.me/+M1SY4YU6T-pjYWQx" target="_blank" rel="noopener noreferrer">
@@ -71,7 +71,7 @@ export const Contact = () => {
             {/* Instagram */}
             <Card className="glass-card p-6 glow-hover">
               <div className="flex flex-col items-center text-center">
-                <div className="w-16 h-16 rounded-full bg-gradient-to-r from-[hsl(var(--shark-gradient-start))] to-[hsl(var(--shark-gradient-end))] flex items-center justify-center mb-4">
+                <div className="w-16 h-16 rounded-full bg-gradient-to-r from-[hsl(var(--premium-gradient-start))] to-[hsl(var(--premium-gradient-end))] flex items-center justify-center mb-4">
                   <Instagram className="w-8 h-8 text-white" />
                 </div>
                 <h4 className="text-xl font-bold mb-2">Instagram Oficial</h4>
@@ -93,7 +93,7 @@ export const Contact = () => {
                   </div>
                 </div>
                 <Button
-                  className="w-full bg-gradient-to-r from-[hsl(var(--shark-gradient-start))] to-[hsl(var(--shark-gradient-end))] hover:opacity-90"
+                  className="w-full bg-gradient-to-r from-[hsl(var(--premium-gradient-start))] to-[hsl(var(--premium-gradient-end))] hover:opacity-90"
                   asChild
                 >
                   <a href="https://www.instagram.com/_sharkgreen" target="_blank" rel="noopener noreferrer">
@@ -106,7 +106,7 @@ export const Contact = () => {
             {/* YouTube */}
             <Card className="glass-card p-6 glow-hover">
               <div className="flex flex-col items-center text-center">
-                <div className="w-16 h-16 rounded-full bg-gradient-to-r from-[hsl(var(--shark-gradient-start))] to-[hsl(var(--shark-gradient-end))] flex items-center justify-center mb-4">
+                <div className="w-16 h-16 rounded-full bg-gradient-to-r from-[hsl(var(--premium-gradient-start))] to-[hsl(var(--premium-gradient-end))] flex items-center justify-center mb-4">
                   <Youtube className="w-8 h-8 text-white" />
                 </div>
                 <h4 className="text-xl font-bold mb-2">Canal YouTube</h4>
@@ -128,7 +128,7 @@ export const Contact = () => {
                   </div>
                 </div>
                 <Button
-                  className="w-full bg-gradient-to-r from-[hsl(var(--shark-gradient-start))] to-[hsl(var(--shark-gradient-end))] hover:opacity-90"
+                  className="w-full bg-gradient-to-r from-[hsl(var(--premium-gradient-start))] to-[hsl(var(--premium-gradient-end))] hover:opacity-90"
                   asChild
                 >
                   <a href="https://www.youtube.com/@sharkuniverse" target="_blank" rel="noopener noreferrer">
@@ -179,7 +179,7 @@ export const Contact = () => {
                 </div>
               </div>
               <Button
-                className="w-full bg-gradient-to-r from-[hsl(var(--shark-gradient-start))] to-[hsl(var(--shark-gradient-end))] hover:opacity-90"
+                className="w-full bg-gradient-to-r from-[hsl(var(--premium-gradient-start))] to-[hsl(var(--premium-gradient-end))] hover:opacity-90"
                 asChild
               >
                 <a href="https://t.me/SuporteSharkGreen_procedimentos" target="_blank" rel="noopener noreferrer">
@@ -216,7 +216,7 @@ export const Contact = () => {
                 </div>
               </div>
               <Button
-                className="w-full bg-gradient-to-r from-[hsl(var(--shark-gradient-start))] to-[hsl(var(--shark-gradient-end))] hover:opacity-90"
+                className="w-full bg-gradient-to-r from-[hsl(var(--premium-gradient-start))] to-[hsl(var(--premium-gradient-end))] hover:opacity-90"
                 asChild
               >
                 <a href="https://t.me/SuporteSharkGreen_financeiro" target="_blank" rel="noopener noreferrer">
@@ -230,7 +230,7 @@ export const Contact = () => {
         {/* Email Direto */}
         <Card className="glass-card p-8 md:p-12 text-center mb-12">
           <div className="flex flex-col items-center">
-            <div className="w-16 h-16 rounded-full bg-gradient-to-r from-[hsl(var(--shark-gradient-start))] to-[hsl(var(--shark-gradient-end))] flex items-center justify-center mb-6">
+            <div className="w-16 h-16 rounded-full bg-gradient-to-r from-[hsl(var(--premium-gradient-start))] to-[hsl(var(--premium-gradient-end))] flex items-center justify-center mb-6">
               <Mail className="w-8 h-8 text-white" />
             </div>
             <h3 className="text-2xl font-bold mb-2">Contato Direto por E-mail</h3>

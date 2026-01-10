@@ -13,7 +13,7 @@ interface HandicapItem {
 
 const HandicapBox = ({ item }: { item: HandicapItem }) => (
   <div className="bg-card border border-border/50 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-    <div className="bg-gradient-to-r from-[hsl(var(--shark-gradient-start))] to-[hsl(var(--shark-gradient-end))] px-4 py-3">
+    <div className="bg-gradient-to-r from-[hsl(var(--premium-gradient-start))] to-[hsl(var(--premium-gradient-end))] px-4 py-3">
       <span className="text-white font-bold text-lg">{item.value}</span>
     </div>
     <div className="p-4 space-y-2">
