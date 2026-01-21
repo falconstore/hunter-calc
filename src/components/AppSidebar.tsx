@@ -95,7 +95,7 @@ export const AppSidebar = ({
             <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
               <LayoutDashboard className="w-5 h-5 text-primary-foreground" />
             </div>
-            <span className="font-serif font-bold text-lg text-gradient">Dashboard</span>
+            <span className="font-serif font-bold text-lg text-gradient">Hunter</span>
           </Link>
         )}
         <button

@@ -38,7 +38,7 @@ export const MobileHeader = () => {
           <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
             <Calculator className="w-5 h-5 text-primary-foreground" />
           </div>
-          <span className="font-serif font-bold text-lg text-gradient">Dashboard</span>
+          <span className="font-serif font-bold text-lg text-gradient">Hunter</span>
         </Link>
 
         {/* Actions */}
@@ -53,7 +53,7 @@ export const MobileHeader = () => {
             </SheetTrigger>
             <SheetContent side="right" className="w-72 bg-sidebar border-sidebar-border">
               <div className="py-6">
-                <h2 className="text-lg font-serif font-bold text-gradient mb-6">Menu</h2>
+                <h2 className="text-lg font-serif font-bold text-gradient mb-6">Hunter</h2>
                 <nav className="space-y-6">
                   {/* Home */}
                   <div>

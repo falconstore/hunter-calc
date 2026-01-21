@@ -1,5 +1,5 @@
 import { Card } from "./ui/card";
-import { Target, Zap, Gift, TrendingUp, CheckCircle, BookOpen, Image, Link, Video, HeadphonesIcon, Fish, ListChecks, Calculator, Sparkles } from "lucide-react";
+import { Target, Zap, Gift, TrendingUp, CheckCircle, BookOpen, Image, Link, Video, HeadphonesIcon, ListChecks, Calculator, Sparkles } from "lucide-react";
 
 const features = [
   {
@@ -77,7 +77,7 @@ export const About = () => {
         {/* Hero Stats */}
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-black mb-6">
-            <span className="text-gradient">Shark 100% Green</span>
+            <span className="text-gradient">Hunter 100% Green</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-12">
             Sistema profissional de calculadoras matemáticas para otimização de apostas esportivas e arbitragem
@@ -99,14 +99,14 @@ export const About = () => {
           </div>
         </div>
 
-        {/* O que é o Shark Green */}
+        {/* O que é o Hunter Green */}
         <Card className="glass-card p-8 md:p-12 mb-12">
           <div className="flex items-center justify-center gap-3 mb-6">
             <div className="p-2 rounded-lg gradient-glow">
-              <Fish className="w-6 h-6" />
+              <Target className="w-6 h-6" />
             </div>
             <h3 className="text-3xl font-black text-center">
-              O que é o Shark 100% Green?
+              O que é o Hunter 100% Green?
             </h3>
           </div>
           <p className="text-lg text-center mb-8 max-w-3xl mx-auto">

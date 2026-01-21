@@ -1,5 +1,5 @@
 import { Button } from "./ui/button";
-import sharkLogo from "@/assets/shark-logo.png";
+import hunterLogo from "@/assets/hunter-logo.png";
 
 export const Hero = () => {
   const scrollToCalculators = () => {
@@ -20,15 +20,15 @@ export const Hero = () => {
           {/* Logo Grande */}
           <div className="flex justify-center mb-4">
             <img 
-              src={sharkLogo} 
-              alt="Shark 100% Green" 
+              src={hunterLogo} 
+              alt="Hunter 100% Green" 
               className="h-32 md:h-44 w-auto drop-shadow-2xl animate-float"
             />
           </div>
 
           {/* Título */}
           <h1 className="text-4xl md:text-6xl font-black tracking-tight">
-            <span className="text-gradient">Shark 100%</span>
+            <span className="text-gradient">Hunter 100%</span>
             <span className="text-foreground"> Green</span>
           </h1>
 
