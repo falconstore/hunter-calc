@@ -41,7 +41,7 @@ export const CalculatorTabs = () => {
   return (
     <section id="calculadoras" className="py-20 px-4 bg-muted/30">
       <div className="container mx-auto max-w-7xl">
-        <div className="text-center mb-12 animate-fade-in">
+        <div className="flex flex-col items-center text-center mb-12 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-black mb-4">
             Nossas <span className="text-gradient">Calculadoras</span>
           </h2>
@@ -51,7 +51,7 @@ export const CalculatorTabs = () => {
         </div>
 
         <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
-          <TabsList className="grid w-full max-w-xl mx-auto grid-cols-3 mb-8 h-14 p-1 bg-background/50 backdrop-blur-sm border border-border/50">
+          <TabsList className="flex justify-center w-full max-w-xl mx-auto mb-8 h-14 p-1 bg-background/50 backdrop-blur-sm border border-border/50">
             <TabsTrigger 
               value="arbipro" 
               className="text-base font-bold data-[state=active]:bg-gradient-to-r data-[state=active]:from-[hsl(var(--premium-gradient-start))] data-[state=active]:to-[hsl(var(--premium-gradient-end))] data-[state=active]:text-white transition-all duration-300"
