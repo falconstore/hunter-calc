@@ -545,7 +545,7 @@ export const CalculatorMultiLay = () => {
       <Card className="glass-card border-border/50 relative overflow-hidden">
         <div 
           className="absolute inset-0 opacity-5 pointer-events-none bg-contain bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('/images/shark-logo-watermark.png')" }}
+          style={{ backgroundImage: "url('/images/hunter-logo-watermark.png')" }}
         />
         
         <CardHeader className="pb-3 sm:pb-4 px-4 sm:px-6">

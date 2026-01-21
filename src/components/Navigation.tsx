@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Button } from "./ui/button";
 import { Menu, X } from "lucide-react";
 import { ThemeToggle } from "./ThemeToggle";
-import sharkLogo from "@/assets/shark-logo.png";
+import hunterLogo from "@/assets/hunter-logo.png";
 export const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -20,7 +20,7 @@ export const Navigation = () => {
     setIsMobileMenuOpen(false);
   };
   const handleBetbraClick = () => {
-    window.open("https://betbra.bet.br/register/?affid=shark100", "_blank");
+    window.open("https://betbra.bet.br/register/?affid=hunter100", "_blank");
   };
   const handleVideoClick = () => {
     window.open("https://www.youtube.com/watch?v=jRyoWL-plJ0&list=PLMxf7zH7RQEDdrP26qkavZC2o134fle2L", "_blank");
@@ -33,9 +33,9 @@ export const Navigation = () => {
           top: 0,
           behavior: "smooth"
         })} className="flex items-center gap-2">
-            <img src={sharkLogo} alt="Shark 100% Green" className="h-10 w-auto" />
+            <img src={hunterLogo} alt="Hunter 100% Green" className="h-10 w-auto" />
             <span className="text-xl font-black hidden sm:inline">
-              <span className="text-gradient">Shark  100% Green </span>
+              <span className="text-gradient">Hunter 100% Green</span>
               
             </span>
           </button>

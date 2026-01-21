@@ -20,31 +20,31 @@
     --popover: 0 0% 6%;
     --popover-foreground: 30 10% 92%;
 
-    --primary: 25 100% 50%;
+    --primary: 145 85% 45%;
     --primary-foreground: 0 0% 4%;
     
-    --secondary: 35 100% 55%;
+    --secondary: 155 80% 50%;
     --secondary-foreground: 0 0% 4%;
 
     --muted: 0 0% 12%;
     --muted-foreground: 30 10% 60%;
 
-    --accent: 20 80% 45%;
+    --accent: 140 70% 40%;
     --accent-foreground: 30 10% 92%;
 
     --destructive: 0 70% 50%;
     --destructive-foreground: 30 10% 92%;
 
-    --border: 30 20% 18%;
+    --border: 145 20% 18%;
     --input: 0 0% 12%;
-    --ring: 25 100% 50%;
+    --ring: 145 85% 45%;
 
     --radius: 0.5rem;
     
-    /* Premium Gradient Theme */
-    --premium-gradient-start: 25 100% 50%;
-    --premium-gradient-mid: 30 100% 55%;
-    --premium-gradient-end: 40 100% 50%;
+    /* Premium Gradient Theme - Green */
+    --premium-gradient-start: 145 85% 45%;
+    --premium-gradient-mid: 150 80% 50%;
+    --premium-gradient-end: 160 75% 55%;
     
     --success: 145 70% 45%;
     --success-foreground: 0 0% 4%;
@@ -52,17 +52,17 @@
     --warning: 45 100% 55%;
     --warning-foreground: 0 0% 4%;
     
-    --glow: 25 100% 50%;
+    --glow: 145 85% 45%;
 
     /* Sidebar */
     --sidebar-background: 0 0% 6%;
     --sidebar-foreground: 30 10% 85%;
-    --sidebar-primary: 25 100% 50%;
+    --sidebar-primary: 145 85% 45%;
     --sidebar-primary-foreground: 0 0% 4%;
     --sidebar-accent: 0 0% 12%;
     --sidebar-accent-foreground: 30 10% 92%;
-    --sidebar-border: 30 15% 15%;
-    --sidebar-ring: 25 100% 50%;
+    --sidebar-border: 145 15% 15%;
+    --sidebar-ring: 145 85% 45%;
   }
 
   /* Modo Claro Premium */
@@ -76,29 +76,29 @@
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 8%;
 
-    --primary: 25 100% 45%;
+    --primary: 145 85% 40%;
     --primary-foreground: 0 0% 100%;
     
-    --secondary: 35 90% 50%;
+    --secondary: 155 80% 45%;
     --secondary-foreground: 0 0% 100%;
 
     --muted: 30 15% 92%;
     --muted-foreground: 0 0% 40%;
 
-    --accent: 20 75% 40%;
+    --accent: 140 70% 35%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 70% 45%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 30 15% 85%;
+    --border: 145 15% 85%;
     --input: 30 15% 92%;
-    --ring: 25 100% 45%;
+    --ring: 145 85% 40%;
     
-    /* Premium Gradient Theme - Light */
-    --premium-gradient-start: 25 100% 45%;
-    --premium-gradient-mid: 30 100% 50%;
-    --premium-gradient-end: 40 100% 45%;
+    /* Premium Gradient Theme - Light Green */
+    --premium-gradient-start: 145 85% 40%;
+    --premium-gradient-mid: 150 80% 45%;
+    --premium-gradient-end: 160 75% 50%;
     
     --success: 145 65% 35%;
     --success-foreground: 0 0% 100%;
@@ -106,17 +106,17 @@
     --warning: 45 100% 45%;
     --warning-foreground: 0 0% 8%;
     
-    --glow: 25 100% 50%;
+    --glow: 145 85% 45%;
 
     /* Sidebar Light */
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 0 0% 25%;
-    --sidebar-primary: 25 100% 45%;
+    --sidebar-primary: 145 85% 40%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 30 15% 92%;
+    --sidebar-accent: 145 15% 92%;
     --sidebar-accent-foreground: 0 0% 8%;
-    --sidebar-border: 30 15% 88%;
-    --sidebar-ring: 25 100% 45%;
+    --sidebar-border: 145 15% 88%;
+    --sidebar-ring: 145 85% 40%;
   }
 }
 

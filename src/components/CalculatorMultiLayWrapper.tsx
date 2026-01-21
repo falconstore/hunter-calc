@@ -9,7 +9,7 @@ export const CalculatorMultiLayWrapper = () => {
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
-    if (params.get("dev") === "shark") {
+    if (params.get("dev") === "hunter") {
       setIsDev(true);
     }
   }, []);
