@@ -30,18 +30,18 @@ export const CalculatorSection = ({
   return <section id="calculadoras" className="py-16 px-6 bg-muted/30">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="mb-10">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold mb-3 mx-[200px] mr-0 ml-[210px]">
+        <div className="text-center mb-10">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4">
             Nossas <span className="text-gradient">Calculadoras</span>
           </h2>
-          <p className="text-muted-foreground text-lg ml-[150px] mx-[160px] pb-0 mb-0 mt-[30px]">
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             Ferramentas profissionais para maximizar seus lucros
           </p>
         </div>
 
         {/* Tabs */}
         <Tabs value={activeCalculator} onValueChange={setActiveCalculator} className="w-full">
-          <TabsList className="grid w-full max-w-md grid-cols-3 mb-8 h-12 p-1 bg-card border border-border">
+          <TabsList className="flex justify-center w-full max-w-md mx-auto mb-8 h-12 p-1 bg-card border border-border">
             <TabsTrigger value="arbipro" className="text-sm font-bold data-[state=active]:bg-gradient-to-r data-[state=active]:from-primary data-[state=active]:to-secondary data-[state=active]:text-primary-foreground transition-all duration-300">
               <Calculator className="w-4 h-4 mr-2" />
               ArbiPro
