@@ -108,7 +108,11 @@ export const Contact = () => {
                   className="w-full bg-gradient-to-r from-[hsl(var(--premium-gradient-start))] to-[hsl(var(--premium-gradient-end))] hover:opacity-90"
                   asChild
                 >
-                  <a href="https://www.instagram.com/huntergreencerto" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="https://www.instagram.com/huntergreencerto?igsh=Mmw1N3lkbjF4M2ts"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Seguir @huntergreencerto
                   </a>
                 </Button>
@@ -141,7 +145,7 @@ export const Contact = () => {
                   className="w-full bg-gradient-to-r from-[hsl(var(--premium-gradient-start))] to-[hsl(var(--premium-gradient-end))] hover:opacity-90"
                   asChild
                 >
-                  <a href="https://www.youtube.com/@sharkuniverse" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
                     Assistir Canal
                   </a>
                 </Button>
@@ -188,7 +192,7 @@ export const Contact = () => {
                 className="w-full bg-gradient-to-r from-[hsl(var(--premium-gradient-start))] to-[hsl(var(--premium-gradient-end))] hover:opacity-90"
                 asChild
               >
-                <a href="https://t.me/SuporteSharkGreen_procedimentos" target="_blank" rel="noopener noreferrer">
+                <a href="https://t.me/suportehunter" target="_blank" rel="noopener noreferrer">
                   Abrir Suporte
                 </a>
               </Button>
@@ -223,7 +227,7 @@ export const Contact = () => {
                 className="w-full bg-gradient-to-r from-[hsl(var(--premium-gradient-start))] to-[hsl(var(--premium-gradient-end))] hover:opacity-90"
                 asChild
               >
-                <a href="https://t.me/SuporteSharkGreen_financeiro" target="_blank" rel="noopener noreferrer">
+                <a href="https://t.me/suportehunter" target="_blank" rel="noopener noreferrer">
                   Abrir Suporte
                 </a>
               </Button>
