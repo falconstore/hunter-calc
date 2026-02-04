@@ -1,78 +1,58 @@
 import { Card } from "./ui/card";
 import { Target, Zap, Gift, TrendingUp, CheckCircle, BookOpen, Image, Link, Video, HeadphonesIcon, ListChecks, Calculator, Sparkles } from "lucide-react";
-
-const features = [
-  {
-    icon: Target,
-    title: "Cashback",
-    description: "Maximize seus retornos com estratégias otimizadas",
-  },
-  {
-    icon: Zap,
-    title: "Super Odds",
-    description: "Aproveite as melhores cotações do mercado",
-  },
-  {
-    icon: Gift,
-    title: "Apostas Grátis",
-    description: "Otimize seus freebets para máximo lucro",
-  },
-  {
-    icon: TrendingUp,
-    title: "Giros Grátis",
-    description: "Aproveite promoções de casino com inteligência",
-  },
-];
-
-const offerings = [
-  {
-    icon: BookOpen,
-    title: "Instruções passo a passo",
-    description: "Guias detalhados e fáceis de seguir",
-  },
-  {
-    icon: Image,
-    title: "Imagens explicativas",
-    description: "Tutoriais visuais para melhor compreensão",
-  },
-  {
-    icon: Link,
-    title: "Links diretos",
-    description: "Acesso direto para cada promoção",
-  },
-  {
-    icon: Video,
-    title: "Vídeos tutoriais",
-    description: "Explicações simples em vídeo",
-  },
-  {
-    icon: HeadphonesIcon,
-    title: "Suporte rápido",
-    description: "Resposta rápida para tirar dúvidas",
-  },
-];
-
-const requirements = [
-  {
-    number: "1",
-    title: "Um celular com internet",
-    description: "Simples assim, só isso",
-  },
-  {
-    number: "2",
-    title: "Saber copiar e colar",
-    description: "Básico de tecnologia",
-  },
-  {
-    number: "3",
-    title: "Vontade de mudar de vida",
-    description: "O mais importante de tudo",
-  },
-];
-
+const features = [{
+  icon: Target,
+  title: "Cashback",
+  description: "Maximize seus retornos com estratégias otimizadas"
+}, {
+  icon: Zap,
+  title: "Super Odds",
+  description: "Aproveite as melhores cotações do mercado"
+}, {
+  icon: Gift,
+  title: "Apostas Grátis",
+  description: "Otimize seus freebets para máximo lucro"
+}, {
+  icon: TrendingUp,
+  title: "Giros Grátis",
+  description: "Aproveite promoções de casino com inteligência"
+}];
+const offerings = [{
+  icon: BookOpen,
+  title: "Instruções passo a passo",
+  description: "Guias detalhados e fáceis de seguir"
+}, {
+  icon: Image,
+  title: "Imagens explicativas",
+  description: "Tutoriais visuais para melhor compreensão"
+}, {
+  icon: Link,
+  title: "Links diretos",
+  description: "Acesso direto para cada promoção"
+}, {
+  icon: Video,
+  title: "Vídeos tutoriais",
+  description: "Explicações simples em vídeo"
+}, {
+  icon: HeadphonesIcon,
+  title: "Suporte rápido",
+  description: "Resposta rápida para tirar dúvidas"
+}];
+const requirements = [{
+  number: "1",
+  title: "Um celular com internet",
+  description: "Simples assim, só isso"
+}, {
+  number: "2",
+  title: "Saber copiar e colar",
+  description: "Básico de tecnologia"
+}, {
+  number: "3",
+  title: "Vontade de mudar de vida",
+  description: "O mais importante de tudo"
+}];
 export const About = () => {
-  return (
-    <section id="sobre" className="py-20 px-4">
+  return <section id="sobre" className="py-20 px-4">
       <div className="container mx-auto max-w-6xl">
         {/* Hero Stats */}
         <div className="text-center mb-16 animate-fade-in">
@@ -89,11 +69,11 @@ export const About = () => {
               <div className="stat-label">Precisão Matemática</div>
             </div>
             <div className="stat-card">
-              <div className="stat-value text-gradient">2</div>
+              <div className="stat-value text-gradient">4</div>
               <div className="stat-label">Calculadoras Avançadas</div>
             </div>
             <div className="stat-card">
-              <div className="stat-value text-gradient">2500+</div>
+              <div className="stat-value text-gradient">1000+</div>
               <div className="stat-label">Usuários Ativos</div>
             </div>
           </div>
@@ -116,13 +96,10 @@ export const About = () => {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {features.map((feature, index) => {
-              const Icon = feature.icon;
-              return (
-                <div
-                  key={feature.title}
-                  className="text-center p-6 rounded-lg bg-muted/50 hover:bg-muted transition-colors"
-                  style={{ animationDelay: `${index * 0.1}s` }}
-                >
+            const Icon = feature.icon;
+            return <div key={feature.title} className="text-center p-6 rounded-lg bg-muted/50 hover:bg-muted transition-colors" style={{
+              animationDelay: `${index * 0.1}s`
+            }}>
                   <div className="flex justify-center mb-4">
                     <div className="p-3 rounded-lg gradient-glow">
                       <Icon className="w-8 h-8" />
@@ -130,9 +107,8 @@ export const About = () => {
                   </div>
                   <h4 className="text-xl font-bold mb-2">{feature.title}</h4>
                   <p className="text-sm text-muted-foreground">{feature.description}</p>
-                </div>
-              );
-            })}
+                </div>;
+          })}
           </div>
         </Card>
 
@@ -148,13 +124,10 @@ export const About = () => {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {offerings.map((offering, index) => {
-              const Icon = offering.icon;
-              return (
-                <Card
-                  key={offering.title}
-                  className="glass-card p-6 glow-hover"
-                  style={{ animationDelay: `${index * 0.1}s` }}
-                >
+            const Icon = offering.icon;
+            return <Card key={offering.title} className="glass-card p-6 glow-hover" style={{
+              animationDelay: `${index * 0.1}s`
+            }}>
                   <div className="flex items-start gap-4">
                     <div className="p-3 rounded-lg gradient-glow flex-shrink-0">
                       <Icon className="w-6 h-6" />
@@ -164,9 +137,8 @@ export const About = () => {
                       <p className="text-sm text-muted-foreground">{offering.description}</p>
                     </div>
                   </div>
-                </Card>
-              );
-            })}
+                </Card>;
+          })}
           </div>
         </div>
 
@@ -181,19 +153,15 @@ export const About = () => {
             </h3>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
-            {requirements.map((req, index) => (
-              <div
-                key={req.number}
-                className="text-center"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
+            {requirements.map((req, index) => <div key={req.number} className="text-center" style={{
+            animationDelay: `${index * 0.1}s`
+          }}>
                 <div className="w-16 h-16 rounded-full bg-gradient-to-r from-[hsl(var(--premium-gradient-start))] to-[hsl(var(--premium-gradient-end))] text-white text-2xl font-black flex items-center justify-center mx-auto mb-4">
                   {req.number}
                 </div>
                 <h4 className="text-xl font-bold mb-2">{req.title}</h4>
                 <p className="text-muted-foreground">{req.description}</p>
-              </div>
-            ))}
+              </div>)}
           </div>
         </Card>
 
@@ -275,6 +243,5 @@ export const About = () => {
           </p>
         </Card>
       </div>
-    </section>
-  );
+    </section>;
 };

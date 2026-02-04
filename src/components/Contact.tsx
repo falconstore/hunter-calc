@@ -1,10 +1,8 @@
 import { Card } from "./ui/card";
 import { Button } from "./ui/button";
 import { Mail, MessageSquare, DollarSign, HelpCircle, Instagram, Youtube, Phone, Star, CheckCircle, Wrench, Clock, Target, BookOpen, CreditCard, RefreshCw, BarChart, Rocket } from "lucide-react";
-
 export const Contact = () => {
-  return (
-    <section id="contato" className="py-20 px-4">
+  return <section id="contato" className="py-20 px-4">
       <div className="container mx-auto max-w-6xl">
         {/* Hero */}
         <div className="text-center mb-12 animate-fade-in">
@@ -40,9 +38,7 @@ export const Contact = () => {
                   <MessageSquare className="w-8 h-8 text-white" />
                 </div>
                 <h4 className="text-xl font-bold mb-2">Grupo Telegram FREE</h4>
-                <p className="text-sm text-muted-foreground mb-4">
-                  Comunidade ativa com +2500 membros
-                </p>
+                <p className="text-sm text-muted-foreground mb-4">Comunidade ativa com +500 membros</p>
                 <div className="space-y-1 mb-6 text-sm">
                   <div className="flex items-center gap-2 justify-center">
                     <CheckCircle className="w-4 h-4 text-primary" />
@@ -57,10 +53,7 @@ export const Contact = () => {
                     <span>Suporte da equipe</span>
                   </div>
                 </div>
-                <Button
-                  className="w-full bg-gradient-to-r from-[hsl(var(--premium-gradient-start))] to-[hsl(var(--premium-gradient-end))] hover:opacity-90"
-                  asChild
-                >
+                <Button className="w-full bg-gradient-to-r from-[hsl(var(--premium-gradient-start))] to-[hsl(var(--premium-gradient-end))] hover:opacity-90" asChild>
                   <a href="https://t.me/+M1SY4YU6T-pjYWQx" target="_blank" rel="noopener noreferrer">
                     Entrar no Grupo
                   </a>
@@ -92,13 +85,8 @@ export const Contact = () => {
                     <span>Dicas rápidas</span>
                   </div>
                 </div>
-                <Button
-                  className="w-full bg-gradient-to-r from-[hsl(var(--premium-gradient-start))] to-[hsl(var(--premium-gradient-end))] hover:opacity-90"
-                  asChild
-                >
-                  <a href="https://www.instagram.com/_sharkgreen" target="_blank" rel="noopener noreferrer">
-                    Seguir @_sharkgreen
-                  </a>
+                <Button className="w-full bg-gradient-to-r from-[hsl(var(--premium-gradient-start))] to-[hsl(var(--premium-gradient-end))] hover:opacity-90" asChild>
+                  <a href="https://www.instagram.com/_sharkgreen" target="_blank" rel="noopener noreferrer">Seguir @huntergreencerto</a>
                 </Button>
               </div>
             </Card>
@@ -127,10 +115,7 @@ export const Contact = () => {
                     <span>Lives exclusivas</span>
                   </div>
                 </div>
-                <Button
-                  className="w-full bg-gradient-to-r from-[hsl(var(--premium-gradient-start))] to-[hsl(var(--premium-gradient-end))] hover:opacity-90"
-                  asChild
-                >
+                <Button className="w-full bg-gradient-to-r from-[hsl(var(--premium-gradient-start))] to-[hsl(var(--premium-gradient-end))] hover:opacity-90" asChild>
                   <a href="https://www.youtube.com/@sharkuniverse" target="_blank" rel="noopener noreferrer">
                     Assistir Canal
                   </a>
@@ -178,10 +163,7 @@ export const Contact = () => {
                   <span className="text-sm">Atendimento personalizado</span>
                 </div>
               </div>
-              <Button
-                className="w-full bg-gradient-to-r from-[hsl(var(--premium-gradient-start))] to-[hsl(var(--premium-gradient-end))] hover:opacity-90"
-                asChild
-              >
+              <Button className="w-full bg-gradient-to-r from-[hsl(var(--premium-gradient-start))] to-[hsl(var(--premium-gradient-end))] hover:opacity-90" asChild>
                 <a href="https://t.me/SuporteSharkGreen_procedimentos" target="_blank" rel="noopener noreferrer">
                   Abrir Suporte
                 </a>
@@ -215,10 +197,7 @@ export const Contact = () => {
                   <span className="text-sm">Planos e preços</span>
                 </div>
               </div>
-              <Button
-                className="w-full bg-gradient-to-r from-[hsl(var(--premium-gradient-start))] to-[hsl(var(--premium-gradient-end))] hover:opacity-90"
-                asChild
-              >
+              <Button className="w-full bg-gradient-to-r from-[hsl(var(--premium-gradient-start))] to-[hsl(var(--premium-gradient-end))] hover:opacity-90" asChild>
                 <a href="https://t.me/SuporteSharkGreen_financeiro" target="_blank" rel="noopener noreferrer">
                   Abrir Suporte
                 </a>
@@ -237,14 +216,8 @@ export const Contact = () => {
             <p className="text-muted-foreground mb-6">
               Para questões específicas ou parcerias comerciais
             </p>
-            <Button
-              variant="outline"
-              className="border-primary/50 hover:bg-primary/10"
-              asChild
-            >
-              <a href="mailto:sharkgreenvip@hotmail.com">
-                sharkgreenvip@hotmail.com
-              </a>
+            <Button variant="outline" className="border-primary/50 hover:bg-primary/10" asChild>
+              <a href="mailto:sharkgreenvip@hotmail.com">atendimentohuntergreen@hotmail.com</a>
             </Button>
           </div>
         </Card>
@@ -264,6 +237,5 @@ export const Contact = () => {
           </p>
         </Card>
       </div>
-    </section>
-  );
+    </section>;
 };
