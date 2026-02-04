@@ -1,8 +1,28 @@
 import { Card } from "./ui/card";
 import { Button } from "./ui/button";
-import { Mail, MessageSquare, DollarSign, HelpCircle, Instagram, Youtube, Phone, Star, CheckCircle, Wrench, Clock, Target, BookOpen, CreditCard, RefreshCw, BarChart, Rocket } from "lucide-react";
+import {
+  Mail,
+  MessageSquare,
+  DollarSign,
+  HelpCircle,
+  Instagram,
+  Youtube,
+  Phone,
+  Star,
+  CheckCircle,
+  Wrench,
+  Clock,
+  Target,
+  BookOpen,
+  CreditCard,
+  RefreshCw,
+  BarChart,
+  Rocket,
+} from "lucide-react";
+
 export const Contact = () => {
-  return <section id="contato" className="py-20 px-4">
+  return (
+    <section id="contato" className="py-20 px-4">
       <div className="container mx-auto max-w-6xl">
         {/* Hero */}
         <div className="text-center mb-12 animate-fade-in">
@@ -15,8 +35,8 @@ export const Contact = () => {
             </h2>
           </div>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            O único grupo VIP do Brasil que realmente entrega lucro consistente em arbitragem de bônus. 
-            Suporte personalizado e resultados comprovados.
+            O único grupo VIP do Brasil que realmente entrega lucro consistente em arbitragem de bônus. Suporte
+            personalizado e resultados comprovados.
           </p>
         </div>
 
@@ -26,9 +46,7 @@ export const Contact = () => {
             <div className="p-2 rounded-lg gradient-glow">
               <Star className="w-6 h-6" />
             </div>
-            <h3 className="text-3xl font-black text-center">
-              Canais Principais
-            </h3>
+            <h3 className="text-3xl font-black text-center">Canais Principais</h3>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {/* Telegram Group */}
@@ -38,7 +56,7 @@ export const Contact = () => {
                   <MessageSquare className="w-8 h-8 text-white" />
                 </div>
                 <h4 className="text-xl font-bold mb-2">Grupo Telegram FREE</h4>
-                <p className="text-sm text-muted-foreground mb-4">Comunidade ativa com +500 membros</p>
+                <p className="text-sm text-muted-foreground mb-4">Comunidade ativa com +2500 membros</p>
                 <div className="space-y-1 mb-6 text-sm">
                   <div className="flex items-center gap-2 justify-center">
                     <CheckCircle className="w-4 h-4 text-primary" />
@@ -53,7 +71,10 @@ export const Contact = () => {
                     <span>Suporte da equipe</span>
                   </div>
                 </div>
-                <Button className="w-full bg-gradient-to-r from-[hsl(var(--premium-gradient-start))] to-[hsl(var(--premium-gradient-end))] hover:opacity-90" asChild>
+                <Button
+                  className="w-full bg-gradient-to-r from-[hsl(var(--premium-gradient-start))] to-[hsl(var(--premium-gradient-end))] hover:opacity-90"
+                  asChild
+                >
                   <a href="https://t.me/+M1SY4YU6T-pjYWQx" target="_blank" rel="noopener noreferrer">
                     Entrar no Grupo
                   </a>
@@ -68,9 +89,7 @@ export const Contact = () => {
                   <Instagram className="w-8 h-8 text-white" />
                 </div>
                 <h4 className="text-xl font-bold mb-2">Instagram Oficial</h4>
-                <p className="text-sm text-muted-foreground mb-4">
-                  Conteúdo exclusivo e novidades
-                </p>
+                <p className="text-sm text-muted-foreground mb-4">Conteúdo exclusivo e novidades</p>
                 <div className="space-y-1 mb-6 text-sm">
                   <div className="flex items-center gap-2 justify-center">
                     <CheckCircle className="w-4 h-4 text-primary" />
@@ -85,8 +104,13 @@ export const Contact = () => {
                     <span>Dicas rápidas</span>
                   </div>
                 </div>
-                <Button className="w-full bg-gradient-to-r from-[hsl(var(--premium-gradient-start))] to-[hsl(var(--premium-gradient-end))] hover:opacity-90" asChild>
-                  <a href="https://www.instagram.com/_sharkgreen" target="_blank" rel="noopener noreferrer">Seguir @huntergreencerto</a>
+                <Button
+                  className="w-full bg-gradient-to-r from-[hsl(var(--premium-gradient-start))] to-[hsl(var(--premium-gradient-end))] hover:opacity-90"
+                  asChild
+                >
+                  <a href="https://www.instagram.com/huntergreencerto" target="_blank" rel="noopener noreferrer">
+                    Seguir @huntergreencerto
+                  </a>
                 </Button>
               </div>
             </Card>
@@ -98,9 +122,7 @@ export const Contact = () => {
                   <Youtube className="w-8 h-8 text-white" />
                 </div>
                 <h4 className="text-xl font-bold mb-2">Canal YouTube</h4>
-                <p className="text-sm text-muted-foreground mb-4">
-                  Tutoriais em vídeo e conteúdo exclusivo
-                </p>
+                <p className="text-sm text-muted-foreground mb-4">Tutoriais em vídeo e conteúdo exclusivo</p>
                 <div className="space-y-1 mb-6 text-sm">
                   <div className="flex items-center gap-2 justify-center">
                     <CheckCircle className="w-4 h-4 text-primary" />
@@ -115,7 +137,10 @@ export const Contact = () => {
                     <span>Lives exclusivas</span>
                   </div>
                 </div>
-                <Button className="w-full bg-gradient-to-r from-[hsl(var(--premium-gradient-start))] to-[hsl(var(--premium-gradient-end))] hover:opacity-90" asChild>
+                <Button
+                  className="w-full bg-gradient-to-r from-[hsl(var(--premium-gradient-start))] to-[hsl(var(--premium-gradient-end))] hover:opacity-90"
+                  asChild
+                >
                   <a href="https://www.youtube.com/@sharkuniverse" target="_blank" rel="noopener noreferrer">
                     Assistir Canal
                   </a>
@@ -131,9 +156,7 @@ export const Contact = () => {
             <div className="p-2 rounded-lg gradient-glow">
               <Wrench className="w-6 h-6" />
             </div>
-            <h3 className="text-3xl font-black text-center">
-              Suporte Especializado
-            </h3>
+            <h3 className="text-3xl font-black text-center">Suporte Especializado</h3>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
             {/* Suporte Procedimentos */}
@@ -144,9 +167,7 @@ export const Contact = () => {
                 </div>
                 <div className="flex-1">
                   <h4 className="text-xl font-bold mb-2">Suporte Procedimentos</h4>
-                  <p className="text-muted-foreground">
-                    Dúvidas sobre estratégias e procedimentos
-                  </p>
+                  <p className="text-muted-foreground">Dúvidas sobre estratégias e procedimentos</p>
                 </div>
               </div>
               <div className="space-y-2 mb-6">
@@ -163,7 +184,10 @@ export const Contact = () => {
                   <span className="text-sm">Atendimento personalizado</span>
                 </div>
               </div>
-              <Button className="w-full bg-gradient-to-r from-[hsl(var(--premium-gradient-start))] to-[hsl(var(--premium-gradient-end))] hover:opacity-90" asChild>
+              <Button
+                className="w-full bg-gradient-to-r from-[hsl(var(--premium-gradient-start))] to-[hsl(var(--premium-gradient-end))] hover:opacity-90"
+                asChild
+              >
                 <a href="https://t.me/SuporteSharkGreen_procedimentos" target="_blank" rel="noopener noreferrer">
                   Abrir Suporte
                 </a>
@@ -178,9 +202,7 @@ export const Contact = () => {
                 </div>
                 <div className="flex-1">
                   <h4 className="text-xl font-bold mb-2">Suporte Financeiro</h4>
-                  <p className="text-muted-foreground">
-                    Questões sobre pagamentos e assinaturas
-                  </p>
+                  <p className="text-muted-foreground">Questões sobre pagamentos e assinaturas</p>
                 </div>
               </div>
               <div className="space-y-2 mb-6">
@@ -197,7 +219,10 @@ export const Contact = () => {
                   <span className="text-sm">Planos e preços</span>
                 </div>
               </div>
-              <Button className="w-full bg-gradient-to-r from-[hsl(var(--premium-gradient-start))] to-[hsl(var(--premium-gradient-end))] hover:opacity-90" asChild>
+              <Button
+                className="w-full bg-gradient-to-r from-[hsl(var(--premium-gradient-start))] to-[hsl(var(--premium-gradient-end))] hover:opacity-90"
+                asChild
+              >
                 <a href="https://t.me/SuporteSharkGreen_financeiro" target="_blank" rel="noopener noreferrer">
                   Abrir Suporte
                 </a>
@@ -213,11 +238,9 @@ export const Contact = () => {
               <Mail className="w-8 h-8 text-white" />
             </div>
             <h3 className="text-2xl font-bold mb-2">Contato Direto por E-mail</h3>
-            <p className="text-muted-foreground mb-6">
-              Para questões específicas ou parcerias comerciais
-            </p>
+            <p className="text-muted-foreground mb-6">Para questões específicas ou parcerias comerciais</p>
             <Button variant="outline" className="border-primary/50 hover:bg-primary/10" asChild>
-              <a href="mailto:sharkgreenvip@hotmail.com">atendimentohuntergreen@hotmail.com</a>
+              <a href="mailto:atendimentohuntergreen@hotmail.com">atendimentohuntergreen@hotmail.com</a>
             </Button>
           </div>
         </Card>
@@ -228,14 +251,11 @@ export const Contact = () => {
             <div className="p-2 rounded-lg gradient-glow">
               <Rocket className="w-6 h-6" />
             </div>
-            <h3 className="text-2xl md:text-3xl font-black">
-              Pronto para começar?
-            </h3>
+            <h3 className="text-2xl md:text-3xl font-black">Pronto para começar?</h3>
           </div>
-          <p className="text-lg text-muted-foreground">
-            Acesse nossas calculadoras profissionais agora mesmo
-          </p>
+          <p className="text-lg text-muted-foreground">Acesse nossas calculadoras profissionais agora mesmo</p>
         </Card>
       </div>
-    </section>;
+    </section>
+  );
 };
