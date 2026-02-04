@@ -6,7 +6,6 @@ import {
   DollarSign,
   HelpCircle,
   Instagram,
-  Youtube,
   Phone,
   Star,
   CheckCircle,
@@ -48,7 +47,7 @@ export const Contact = () => {
             </div>
             <h3 className="text-3xl font-black text-center">Canais Principais</h3>
           </div>
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
             {/* Telegram Group */}
             <Card className="glass-card p-6 glow-hover">
               <div className="flex flex-col items-center text-center">
@@ -75,7 +74,7 @@ export const Contact = () => {
                   className="w-full bg-gradient-to-r from-[hsl(var(--premium-gradient-start))] to-[hsl(var(--premium-gradient-end))] hover:opacity-90"
                   asChild
                 >
-                  <a href="https://t.me/+M1SY4YU6T-pjYWQx" target="_blank" rel="noopener noreferrer">
+                  <a href="https://t.me/suportehunter" target="_blank" rel="noopener noreferrer">
                     Entrar no Grupo
                   </a>
                 </Button>
@@ -119,38 +118,6 @@ export const Contact = () => {
               </div>
             </Card>
 
-            {/* YouTube */}
-            <Card className="glass-card p-6 glow-hover">
-              <div className="flex flex-col items-center text-center">
-                <div className="w-16 h-16 rounded-full bg-gradient-to-r from-[hsl(var(--premium-gradient-start))] to-[hsl(var(--premium-gradient-end))] flex items-center justify-center mb-4">
-                  <Youtube className="w-8 h-8 text-white" />
-                </div>
-                <h4 className="text-xl font-bold mb-2">Canal YouTube</h4>
-                <p className="text-sm text-muted-foreground mb-4">Tutoriais em vídeo e conteúdo exclusivo</p>
-                <div className="space-y-1 mb-6 text-sm">
-                  <div className="flex items-center gap-2 justify-center">
-                    <CheckCircle className="w-4 h-4 text-primary" />
-                    <span>Vídeos tutoriais</span>
-                  </div>
-                  <div className="flex items-center gap-2 justify-center">
-                    <CheckCircle className="w-4 h-4 text-primary" />
-                    <span>Estratégias visuais</span>
-                  </div>
-                  <div className="flex items-center gap-2 justify-center">
-                    <CheckCircle className="w-4 h-4 text-primary" />
-                    <span>Lives exclusivas</span>
-                  </div>
-                </div>
-                <Button
-                  className="w-full bg-gradient-to-r from-[hsl(var(--premium-gradient-start))] to-[hsl(var(--premium-gradient-end))] hover:opacity-90"
-                  asChild
-                >
-                  <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
-                    Assistir Canal
-                  </a>
-                </Button>
-              </div>
-            </Card>
           </div>
         </div>
 
